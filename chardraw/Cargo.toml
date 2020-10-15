@@ -1,0 +1,12 @@
+[package]
+name = "arduino-chardraw"
+version = "0.1.0"
+authors = ["v0gdump"]
+edition = "2018"
+
+[dependencies]
+pancurses = "0.16"
+
+[dependencies.pdcurses-sys]
+version = "0.7"
+features = ["win32"]
