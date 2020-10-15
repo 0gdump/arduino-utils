@@ -1,0 +1,15 @@
+[package]
+name = "arduino-chargen"
+version = "1.0.1"
+authors = ["0gdump <0gdump.kv@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+serde = { version = "1.0.104", features = ["derive"] }
+bincode = "1.2.1"
+
+[profile.release]
+opt-level = 'z'
+lto = true
+codegen-units = 1
+panic = 'abort'
